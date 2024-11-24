@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Trivia Game!</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}"> 
+</head>
+<body>
+    <header>  
+        <h1>Trivia Quest</h1>  
+        <p>Join the Fun! Compete in Live Trivia & Earn Rewards!</p>  
+    </header>  
+    <main>  
+        <section class="signup-form">  
+            <h2>Join the Waitlist</h2>  
+                <form method="post">  
+                {% csrf_token %}
+                {{ form.as_p }}  
+                <button type="submit">Join the Waitlist</button>  
+            </form>  
+        </section>  
+        <section class="features">  
+            <h2>Why Join Us?</h2>  
+            <ul>  
+                <li>Compete in real-time trivia games!</li>  
+                <li>Win awesome prizes!</li>  
+                <li>Invite friends and earn rewards!</li>  
+            </ul>  
+        </section>  
+        <section class="leaderboard">  
+            <h2>Top Referrers</h2>  
+            <div id="leaderboardTable">  
+                <!-- Leaderboard data can be dynamically populated here with JavaScript -->
+            </div>  
+        </section>  
+        <section class="social-share">  
+            <h2>Spread the Word!</h2>  
+            <button onclick="shareOnTwitter()">Share on Twitter</button>  
+            <button onclick="shareOnFacebook()">Share on Facebook</button>  
+        </section>  
+    </main>  
+    <script src="{% static 'scripst.js' %}"></script>
+</body>
+</html>

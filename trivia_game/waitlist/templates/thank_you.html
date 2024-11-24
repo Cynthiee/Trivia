@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="{% static "thank_you.css" %}">
+</head>
+<body>
+    <div class='thank-you'>
+        <h1>Thank You for Signing Up!</h1>
+        <p>Your unique referral code is: <strong>{{ referral_code }}</strong></p>
+    </div>
+</body>
+</html>
