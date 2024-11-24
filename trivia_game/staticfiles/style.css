@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #e6f2ff;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.signup-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2980b9;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: #27ae60;
+}
+
+.features {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2980b9;
+}
+
+.features ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.features ul li {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #f1f8ff;
+    border-radius: 5px;
+}
+
+.leaderboard {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.leaderboard h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2980b9;
+}
+
+.social-share {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.social-share h2 {
+    margin-bottom: 1.5rem;
+    color: #2980b9;
+}
+
+.social-share button {
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.social-share button:hover {
+    opacity: 0.9;
+}
+
+.social-share button:first-of-type {
+    background-color: #1da1f2; /* Twitter Blue */
+}
+
+.social-share button:last-of-type {
+    background-color: #3b5998; /* Facebook Blue */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        padding: 0.5rem;
+    }
+    
+    .signup-form, .features, .leaderboard, .social-share {
+        padding: 1rem;
+    }
+    
+    .social-share button {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
