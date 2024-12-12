@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chi.ke - Live Trivia Game</title>
-  <link rel="stylesheet" href=" {% static 'style.css' %} ">
+  <link rel="stylesheet" href=" {% static 'css/style.css' %} ">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
@@ -29,7 +29,7 @@
         <button class="btn btn-secondary">Learn More</button>
       </div>
       <div class="hero-image">
-        <img src="static/img/doublewallet.png" alt="App Preview">
+        <img src=" {% static "img/doublewallet.png" %} " alt="App Preview">
       </div>
     </div>
   </header>
@@ -108,7 +108,7 @@
     <ul class="referrer-list">
       <li class="referrer">
         <span class="rank">1</span>
-        <img src="static/img/image6.jpg" alt="Profile picture of Christy Obinna" class="profile-pic">
+        <img src="{% static "img/image6.jpg" %} "alt="Profile picture of Christy Obinna" class="profile-pic">
         <div class="referrer-details">
           <h3>Christy Obinna</h3>
           <p>127 referrals</p>
@@ -116,7 +116,7 @@
       </li>
       <li class="referrer">
         <span class="rank">2</span>
-        <img src="static/img/image7.jpg" alt="Profile picture of Jane Ubani" class="profile-pic">
+        <img src="{% static "img/image7.jpg" %}" alt="Profile picture of Jane Ubani" class="profile-pic">
         <div class="referrer-details">
           <h3>Jane Ubani</h3>
           <p>92 referrals</p>
@@ -124,7 +124,7 @@
       </li>
       <li class="referrer">
         <span class="rank">3</span>
-        <img src="static/img/image2.jpg" alt="Profile picture of Owen Obenga" class="profile-pic">
+        <img src="{% static "img/image2.jpg" %}" alt="Profile picture of Owen Obenga" class="profile-pic">
         <div class="referrer-details">
           <h3>Owen Obenga</h3>
           <p>84 referrals</p>
@@ -132,7 +132,7 @@
       </li>
       <li class="referrer">
         <span class="rank">4</span>
-        <img src="static/img/image5.jpg" alt="Profile picture of Mich Adams" class="profile-pic">
+        <img src="{% static "img/image5.jpg" %}" alt="Profile picture of Mich Adams" class="profile-pic">
         <div class="referrer-details">
           <h3>Mich Adams</h3>
           <p>84 referrals</p>
@@ -158,7 +158,7 @@
       </div>
     </div>
     <div class="image">
-      <img src="static/img/wallet.png" alt="">
+      <img src="{% static "img/wallet.png" %}" alt="">
     </div>
   </section>
   <section class="experience-trivia">
