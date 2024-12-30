@@ -5,29 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi.ke - Trivia Game</title>
-    <link rel="shortcut icon" href=" {% static "images/chikec.png" %} " type="image/x-icon">
-    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="shortcut icon" href="{% static "images/chikec.png" %}" type="image/x-icon">
+    <link rel="stylesheet" href=" {% static "css/style.css" %} ">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo-div">
-            <img src="{% static "images/chikelogo.png" %}" alt="" width="120px" >
+            <img src=" {% static "images/chikelogo.png" %}" alt="" >
         </div>
 
         <nav>
-            <a href="">Leaderboard</a>
-            <a href="{% url "signup" %}">Join Waitlist</a>
+            <a href="#" class="l-button">Leaderboard</a>
+            <a href="#" class="j-waitlist">Join Waitlist</a>
         </nav>
         <div class="menu-icon">
             <img   src="https://img.icons8.com/?size=100&id=8113&format=png&color=000000" alt="">
         </div>
     </header>
-    <section class="container">
-        <div class="row">
-            <div class="col1">
+
+    <!-- Hero section -->
+
+    <section class="hero">
+            <div class="left-hero">
                 <h1>
                     Win Big with <br>Our Live <span>Trivia Game!</span>
                 </h1>
@@ -37,228 +39,421 @@
                 </p>
                 <br>
                 <div class="btn-div">
-                    <a href="{% url "signup" %}">
+                    <a href="#" class="join-btn">
                         Join Waitlist
                     </a>
-                    <a href="#">
+                    <a href="#" class="learn-btn">
                         Learn More
                     </a>
                 </div>
             </div>
-            <div class="col2">
-                <img class="arrow-up" src="{% static 'images/Vectorup.png' %}" alt="Arrow Up">
-                <img class="circle-small-1" src="{% static 'images/Ellipsesmall.png' %}" alt="Small Circle">
-                <img class="phones" src="{% static 'images/doublewallet.png' %}" alt="Phones">
-                <img class="circle-small-2" src="{% static 'images/Ellipsesmall.png' %}" alt="Small Circle">
-                <img class="arrow-down" src="{% static 'images/Vectordown.png' %}" alt="Arrow Down">
-                <img class="circle-big" src="{% static 'images/Ellipsebig.png' %}" alt="Big Circle">
-            </div>           
+            <div class="right-hero">
+                <img class="arrow-up" src="{% static "images/Vectorup.png" %}" alt="Arrow Up">
+                <img class="circle-small-1" src=" {% static "images/Ellipsesmall.png" %}" alt="Small Circle">
+                <img class="phones" src="{% static "images/doublewallet.png" %}" alt="Phones">
+                <img class="circle-small-2" src="{% static "images/Ellipsesmall.png" %}" alt="Small Circle">
+                <img class="arrow-down" src="{% static "images/Vectordown.png" %}" alt="Arrow Down">
+                <img class="circle-big" src="{% static "images/Ellipsebig.png" %}" alt="Big Circle">
+            </div>   
+        </section>
+    <section class="mobile-hero">
+        <div class="mobile-left-hero">
+            <h1>
+                Win Big with our <br>Live <span>Trivia Game!</span>
+            </h1>
+            <br>
+            <p>
+                Get exclusive access to our live trivia game. <br>
+                Compete with friends, climb the leaderboard,<br>
+                and earn cash and reward for new sign-ups.
+            </p>
+            <br>
+            <div class="btn-div">
+                <a href="#" class="join-btn">
+                    Join the Waitlist
+                </a>
+                <a href="#" class="learn-btn">
+                    Learn More
+                </a>
+            </div>
+        </div>
+        <div class="mobile-right-hero">
+            <img class="phones" src="images/doublewallet.png" alt="Phones">
         </div>
     </section>
-    <section class="container">
-        <section class="small-container">
-            <div class="row row3">
-                <div class="col1">
-                    <img src="{% static "images/image8.jpg" %}" alt="" srcset="" width="300px">
-                    <h1>
-                            Join the waitlist today  
-                    </h1>
-                </div>
-                <div class="col3">
-                    <span>
-                        <a href="">
-                           <div class="icon-div div">
-                            <img src="https://img.icons8.com/?size=100&id=8289&format=png&color=e0bbffdc" alt="" srcset="">
-                           </div>
-                        <div class="span-text-div">
-                            <h1>
-                                Be the first to know
-                            </h1>
-                            <p>
-                                Get early access to our live trivia app and be the first to experience the excitement
-                            </p>
-                        </div>
-                    </a>
-                    </span>
-                    
-                    <span>
-                        <a href="">
-                            <div class="icon-div div">
-                                <img src="https://img.icons8.com/?size=100&id=86726&format=png&color=e0bbffdc" alt="" srcset="">
-                               </div>
-                        <div class="span-text-div">
-                            <h1>
-                                Exclusive Perks
-                            </h1>
-                            <p>
-                                Waitlist members will receive special offers, referral codes, and a chance to win cash prizes.
-                            </p>
-                        </div>
-                        </a>
-                    </span>
-                    <span>
-                            <a href="">
-                            <div class="icon-div div">
-                                <img src="https://img.icons8.com/?size=100&id=8911&format=png&color=e0bbffdc" alt="" srcset="">
+    
+    <!-- Join The Waitlist -->
+    <section class="join-waitlist">
+                    <div class="join-left">
+                        <img src="{% static " images/image8.jpg" %}" alt="" width="300px">
+                        <h1>
+                                Join the <br>Waitlist today  
+                        </h1>
+                    </div>
+                    <div class="join-right">
+                        <span>
+                               <div class="icon">
+                                <img src="https://img.icons8.com/?size=100&id=8289&format=png&color=e0bbffdc" alt="" srcset="">
                                </div>
                             <div class="span-text-div">
                                 <h1>
-                                    Signup Now
+                                    Be the first to know
                                 </h1>
                                 <p>
-                                    Get and share your referral code to win cash prizes as spots are limited.
+                                    Get early access to our live trivia app and be the first to experience the excitement
                                 </p>
                             </div>
-                        </a>
                         </span>
+                        <span>
+                                <div class="icon">
+                                    <img src="https://img.icons8.com/?size=100&id=86726&format=png&color=e0bbffdc" alt="" srcset="">
+                                   </div>
+                            <div class="span-text-div">
+                                <h1>
+                                    Exclusive Perks
+                                </h1>
+                                <p>
+                                    Waitlist members will receive special offers, referral codes, and a chance to win cash prizes.
+                                </p>
+                            </div>
+                        </span>
+                        <span>
+                                <div class="icon">
+                                    <img src="https://img.icons8.com/?size=100&id=8911&format=png&color=e0bbffdc" alt="" srcset="">
+                                   </div>
+                                <div class="span-text-div">
+                                    <h1>
+                                        Signup Now
+                                    </h1>
+                                    <p>
+                                        Get and share your referral code to win cash prizes as spots are limited.
+                                    </p>
+                                </div>
+                            </span>
+                    </div>
+    </section>      
+    <section class="mobile-join-waitlist">
+        <h1>
+            Join Waitlist Today  
+    </h1>
+        <div class="mobile-join-right">
+            <span> 
+                <div class="m-span-text-div top">
+                    <h1>
+                        Be the first to know
+                    </h1>
+                    <p>
+                        Get early access to our live trivia app and be the first to experience the excitement.
+                    </p>
+                </div>
+            </span>
+            <span>
+                <div class="m-span-text-div">
+                    <h1>
+                        Exclusive Perks
+                    </h1>
+                    <p>
+                        Waitlist members will receive special offers, referral codes, and a chance to win cash prizes.
+                    </p>
+                </div>
+            </span>
+            <span>
+                    <div class="m-span-text-div bottom">
+                        <h1>
+                            Signup Now
+                        </h1>
+                        <p>
+                            Get and share your referral code to win cash prizes as spots are limited.
+                        </p>
+                    </div>
+                </span>
+        </div>
+    </section>  
+    <section class="exclusive">
+            <div class="col1">
+                <h1>
+                    <span>Get</span> Exclusive<br>
+                    Referral Codes
+                </h1>
+                <br>
+                <div class="col-div">
+                    <div>
+                        <h4>
+                            <b>Share with Friends</b>
+                        </h4>
+                    <br>
+                    <small>
+                        Invite your friends to join<br>the waitlist using your unique referral code
+                    </small>
+                    </div>
+                </div>
+                <br>
+                <div class="col-div">
+                    <div>
+                        <h4>
+                            <b>Email Contacts</b>
+                        </h4>
+                    <br>
+                    <small>
+                        Reach out to your network and share your<br>exclusive referral code
+                    </small>
+                    </div>
+                </div>
+                <br>
+                <div class="col-div">
+                    <div>
+                        <h4>
+                            <b>Post on Social Media</b>
+                        </h4>
+                    <br>
+                    <small>
+                        Spread the word on your social channels and<br> let your followers know about the app.
+                    </small>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="col2" style="margin-top: 50px;">
+                <img src="{% static "images/image9.jpg" %}" alt="" width="100%" height="480px">
+            </div>
     </section>
-
-    <section class="referral-div">
-        <div class="container">
-            <div class="row row4">
-                <div class="col1">
-                    <h1>
-                        <span>Get</span> Exclusive<br>
-                        Referral Codes
-                    </h1>
-                    <br>
-                    <div class="col-div">
-                        <div>
-                            <h4>
-                                <b>Share with Friends</b>
-                            </h4>
-                        <br>
-                        <small>
-                            Invite your friends to join<br>the waitlist using your unique referral code
-                        </small>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="col-div">
-                        <div>
-                            <h4>
-                                <b>Email Contacts</b>
-                            </h4>
-                        <br>
-                        <small>
-                            Reach out to your network and share your<br>exclusive referral code
-                        </small>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="col-div">
-                        <div>
-                            <h4>
-                                <b>Post on Social Media</b>
-                            </h4>
-                        <br>
-                        <small>
-                            Spread the word on your social channels and<br> let your followers know about the app.
-                        </small>
-                        </div>
-                    </div>
+    <section class="exclusive-mobile">
+        <div class="colm">
+            <h1>
+                Get Exclusive Referral Codes
+            </h1>
+            <br>
+            <div class="col-m">
+                <div class="symbols">
+                    <img src="{% static "images/arrow.png" %}" alt="">
                 </div>
-                <div class="col2" style="margin-top: 50px;">
-                    <img src="{% static "images/image9.jpg" %}" alt="" width="85%" height="460px">
+                <div class="text">
+                    <h4>
+                        <b>Share with Friends</b>
+                    </h4>
+        
+                <p>
+
+                    Invite your friends to join the waitlist using your unique referral code.
+                </p>
+            
+                </div>
+            </div>
+            <div class="col-m">
+                <div class="symbols">
+                    <img src="{% static "images/envelop.png" %}" alt="" >
+                </div>
+                <div class="text">
+                    <h4>
+                        <b>Email Contacts</b>
+                    </h4>
+                <p>
+
+                    Reach out to your network and share your exclusive referral code
+                </p>
+               
+                </div>
+            </div>
+            <div class="col-m">
+                <div class="symbols">
+                    <img src="{% static "images/star.png" %}" alt="">
+                </div>
+                <div class="text">
+                    <h4>
+                        <b>Post on Social Media</b>
+                    </h4>
+                <p>
+
+                    Spread the word on your social channels and<br> let your followers know about the app.
+                </p>
+            
                 </div>
             </div>
         </div>
-    </section> 
-    
+    </section>
+    <section class="climb">
+            <div class="col1-climb">
+                <h1 style="text-align: center;">Climb the<br><span>Leaderboard</span></h1>
+            </div>
+            <div class="col2-climb">
+                
+                    <div class="board-div">
+                             <span>1</span>
+                        <div class="board">
+                            <div class="img-div">
+                                <img   src="https://img.icons8.com/?size=100&id=85959&format=png&color=fcc419" alt=""  >
+                            </div>
+                            <div class="text-climb">
 
-    <section class="container">
-        <section class="small-container">
-            <div class="row">
-                <div class="col1 col-text">
-                    <h1 style="text-align: center;">Climb the<br><span>Leaderboard</span></h1>
-                </div>
-                <div class="col2">
-                    <div class="leaderboard">
-                        <div class="board-div">
-                            <span>
-                                1
-                            </span>
-                            <div class="board-span-div">
-                                <div class="img-div">
-                                    <img   src="https://img.icons8.com/?size=100&id=85959&format=png&color=fcc419" alt="" style="display: block; margin-bottom: 15px;">
-                                </div>
-                                <h4>
-                                    <b>
+                                <h3>
                                     Referral System
-                                    </b>
-                                </h4>
-                                <p style="font-size: 14px;">
+                                </h3>
+                                <p>
                                     Earn coins for every user who signs up using your referral code.
                                 </p>
                             </div>
                         </div>
-                        <div class="board-div">
-                            <span>
-                                2
-                            </span>
-                            <div class="board-span-div">
-                               <div class="img-div">
-                                <img   src="https://img.icons8.com/?size=100&id=Pag7vXymEFYF&format=png&color=fcc419" alt="" style="display: block; margin-bottom: 15px;">
-                               </div>
-                                <h4>
-                                    <b>
-                                        Leadership Ranking
-                                    </b>
-                                </h4>
-                                <p style="font-size: 14px;">
-                                    Check your position on the leaderboard and see how you measure up against other users.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="board-div">
-                            <span>
-                                3
-                            </span>
-                            <div class="board-span-div">
-                               <div class="img-div" >
-                                <img  src="https://img.icons8.com/?size=100&id=OzsvVHBnDPh9&format=png&color=fcc419" alt="" style="display: block; margin-bottom: 15px;">
-                               </div>
-                                <h4>
-                                    <b>
-                                        Rewards and Prizes
-                                    </b>
-                                </h4>
-                                <p style="font-size: 14px;">
-                                    The top referrals will receive exclusive rewards and the chance to win exciting prizes.
-                                </p>
-                            </div>
+                    </div>
+                   
+                    <div class="board-div">
+                        <span> 2</span>
+                        <div class="board">
+                           <div class="img-div">
+                            <img   src="https://img.icons8.com/?size=100&id=Pag7vXymEFYF&format=png&color=fcc419" alt="">
+                           </div>
+                           <div class="text-climb">
+                               <h3>
+                             Leadership Ranking
+                               </h3>
+                               <p>
+                                Check your position on the leaderboard and see how you measure up against other users.
+                               </p>
+                           </div>
                         </div>
                     </div>
-                </div>
+                    <div class="board-div">
+                        <span>
+                            3
+                        </span>
+                        <div class="board">
+                           <div class="img-div" >
+                            <img  src="https://img.icons8.com/?size=100&id=OzsvVHBnDPh9&format=png&color=fcc419" alt="" >
+                           </div>
+                            <h3>
+                                Rewards and Prizes
+                            </h3>
+                            <p>
+                                The top referrals will receive exclusive rewards and the chance to win exciting prizes.
+                            </p>
+                        </div>
+                    </div>
+                
             </div>
-        </section>
+        
     </section>
-
-<section class="container">
-    <section class="most-ref-div">
-        <h1>See Who's Referring The Most</h1>
-        <div class="col3" id="leaderboard-container">
-            {% for person in leaderboard %}
-                <div class="ref-person">
-                    <div class="left">
-                        <p>{{ forloop.counter }}</p>
-                        <img src="{{ person.image_url }}" alt="">
-                        <p>{{ person.name }}</p>
-                    </div>
-                    <div class="right">
-                        <p>{{ person.referrals }}</p>
-                        <i>⭐</i>
-                    </div>
-                </div>
-            {% endfor %}
+    <section class="mobile-climb">
+        <h1>Climb the Leaderboard</h1>
+        <div class="timeline">
+            <div class="number">1</div>
+          <div class="step">
+            <h2>Referral System</h2>
+            <p>Earn coins for every new user who signs up using your referral code.</p>
+          </div>
+          </div>
+        <div class="timeline">
+            <div class="number">2</div>
+            <div class="step">
+              <h2>Leaderboard Ranking</h2>
+              <p>Check your position on the leaderboard and see how you measure up against other users.</p>
+            </div>
+        </div>
+        <div class="timeline">
+            <div class="number">3</div>
+            <div class="step">
+              <h2>Rewards and Prizes</h2>
+              <p>Earn exciting rewards and prizes for maintaining top leaderboard positions.</p>
+            </div>
+          
         </div>
     </section>
-</section>
+    <section class="most-ref">
+        <h1>
+            See Who's Referring The Most
+        </h1>
+        <div class="refs">
+            <div class="ref-person top">
+                <div class="name">
+                    <span>1</span>
+                    <div class="img-bg">
 
-
+                        <img src="{% static "images/image2.jpg" %}" alt="">
+                    </div>
+                    <p>Christy Obinna</p>
+                </div>
+                <div class="rank">
+                    <i>⭐</i>
+                    <span>127</span>
+                </div>
+            </div>
+            <div class="ref-person second">
+                <div class="name">
+                    <span>2</span>
+                    <div class="img-bg">
+                        <img src="{% static "images/image7.jpg" %}" alt="">
+                    </div>
+                    <span>Christy Obinna</span>
+                </div>
+                <div class="rank">
+                    <i>⭐</i>
+                    <span>92</span>
+                </div>
+            </div>
+            <div class="ref-person">
+                <div class="name">
+                    <span>3</span>
+                    <div class="img-bg">
+                        <img src="{% static "images/image3.jpg" %}" alt="">
+                    </div>
+                    <span>Christy Obinna</span>
+                </div>
+                <div class="rank">
+                    <i>⭐</i>
+                    <span>87</span>
+                </div>
+            </div>
+            <div class="ref-person">
+                <div class="name">
+                    <span>4</span>
+                    <div class="img-bg">
+                        <img src="{% static "images/image4.jpg" %}" alt="">
+                    </div>
+                    <span>Christy Obinna</span>
+                </div>
+                <div class="rank">
+                    <i>⭐</i>
+                    <span>72</span>
+                </div>
+            </div>
+            <div class="ref-person">
+                <div class="name">
+                    <span>5</span>
+                    <div class="img-bg">
+                        <img src="{% static "images/image5.jpg" %}" alt="">
+                    </div>
+                    <span>Christy Obinna</span>
+                </div>
+                <div class="rank">
+                    <i>⭐</i>
+                    <span>70</span>
+                </div>
+            </div>
+            <div class="ref-person">
+                <div class="name">
+                    <span>6</span>
+                    <div class="img-bg">
+                        <img src="{% static "images/image6.jpg" %}" alt="">
+                    </div>
+                    <span>Christy Obinna</span>
+                </div>
+                <div class="rank">
+                    <i>⭐</i>
+                    <span>68</span>
+                </div>
+            </div>
+            <div class="ref-person">
+                <div class="name">
+                    <span>7</span>
+                    <div class="img-bg">
+                        <img src="{% static "images/image2.jpg" %}" alt="">
+                    </div>
+                    <span>Christy Obinna</span>
+                </div>
+                <div class="rank">
+                    <i>⭐</i>
+                    <span>61</span>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="referral-section">
         <h1 class="referral-title">Invite Your Friends to Play</h1>
         <div class="referral-cards">
@@ -303,20 +498,16 @@
             </div>
         </div>
     </section>
-    
-
-    <section class="container">
-        <div class="row row2">
-            <div class="col2">
+    <section class="bottom">   
+            <div class="col-image">
                 <img src="{% static "images/wallet.png" %}" alt="" class="wallet2">
             </div>
-            <div class="col1">
+            <div class="col-text">
                 <h1>
-                    Be the first to experience our Live <span>Trivia Game.</span>
+                    Be the first to experience our <br>Live <span>Trivia Game.</span>
                 </h1>
                 <div class="small-div">
                     <div>
-                        <!-- <i class="bi bi-caret-right"></i> -->
                         <img src="{% static "images/sort-right.png" %}" alt="" width="15px">
                         <small>
                             Referral Rewards
@@ -329,34 +520,29 @@
                         </small>
                     </div>
                     <div class="buttom-signup">
-                        <a href="{% url "signup" %}" class="btn">
+                        <a href="#" class="btn">
                                 Sign Up
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-
-
-    <!-- footer section -->
-
     <footer>
         <div id="footer">
-            <div class="footer-div">
+            <div class="footer-div top">
                 <div class="logo-div">
-                    <img src="{% static "images/chikec.png" %}" alt="" width="40px" >
+                    <img src="{% static "images/chikec.png" %}" alt="" >
                 </div>
                 <div class="socials">
-                    <!-- <i class="bi bi-facebook-fill"></i> -->
+                
                     <a href="" class="icon-div">
                         <img src="https://img.icons8.com/?size=100&id=106163&format=png&color=ffffff" alt="">
                     </a>
                     <a href="" class="icon-div">
-                        <img src="{% static "images/twitter.png" %}" alt="">
+                        <img src="{% static "images/twitter.png" %}"  alt="">
                     </a>
                     <a href="" class="icon-div">
-                        <img src="{% static "images/instagram.png" %}" alt="">
+                        <img src= "{% static "images/instagram.png" %}" alt="">
                     </a>
                     <a href="" class="icon-div">
                         <img src="https://img.icons8.com/?size=100&id=62852&format=png&color=ffffff" alt="">
@@ -370,12 +556,11 @@
                 </div>
             </div>
             <div class="line"></div>
-            <div class="footer-div">
-                
-                    <p class="logo-div">
+            <div class="footer-div down">
+                    <p class="logo-div cc">
                         Copyright © 2024 chi.ke. All Rights Reserved.
                     </p>
-                <div class="socials">
+                <div class="socials pp">
                     <a href="">
                         Privacy Policy
                     </a>
