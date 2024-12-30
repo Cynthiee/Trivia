@@ -33,7 +33,8 @@ def send_welcome_email(user):
     message = f'''Hi {user.first_name}!
     
 Welcome to Chi.ke! Your referral code is: {user.referral_code}
-Share this link with friends: https://chi.ke/join/{user.referral_code}
+# Share this link with friends: https://chi.ke/join/{user.referral_code}
+Share this link with friends: https:///join/{user.referral_code}
 
 Thanks for joining!
 The Chi.ke Team'''

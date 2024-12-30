@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins';
+    font-family: 'Montserrat';
     /* border: 1px solid red; */
 }
 :root{
 --bg-color: #eee;
 --main-color:#4a0c7cdc;
---recent-color:#11db11;
+--recent-color:#2B9F5A;
 }
 
 body{
@@ -31,30 +31,24 @@ header{
 
 header .logo-div{
     margin-left: 40px;
-   
 }
 
 header nav{
     margin-right: 40px;
-    width: 15vw;
+    width: 16vw;
     display: flex;
     justify-content:space-between;
 
 }
 
 header nav a{
-    /* display: inline-block; */
-
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100px;
     height: 30px;
-    border: 1px solid red;
-    /* padding: 10px; */
     border-radius: 25px;
     font-size: 12px;
-
 }
 
 header nav a:first-child{
@@ -76,12 +70,13 @@ header nav a:nth-child(2){
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+    width: 95vw;
 }
 .row{
     width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 20px;
 }
 .col1{
@@ -91,14 +86,14 @@ header nav a:nth-child(2){
     flex-direction: column;
 }
 .col1 h1{
-    font-size: 45px;
+    font-size: 40px;
 }
 .col1 h1 span{
     color: var(--recent-color);
 }
 .col1 p{
-    font-size: 20px;
-    letter-spacing: 0.05cm;
+    font-size: 15px;
+    letter-spacing: 0.03cm;
     line-height: 0.8cm;
 }
 .col1 .btn-div{
@@ -122,19 +117,85 @@ header nav a:nth-child(2){
     color: #fff;
 }
 
-.small-container{
+.col2 {
+    position: relative;
+    width: 45vw; /* Ensure it fits the container */
+    height: auto; /* Adjust based on content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide any overflowing images */
+}
+
+/* Phones */
+.phones {
+    z-index: 2; /* Phones remain on top */
+    position: relative;
+    max-width: 300px; /* Adjust size */
+    margin: 0 auto;
+}
+
+/* Arrow Up */
+.arrow-up {
+    position: absolute;
+    top: 10%; /* Adjust position */
+    left: 5%; /* Adjust horizontal position */
+    z-index: 1; /* Below phones */
+    width: 60px; /* Size of arrow */
+    transform: rotate(-15deg); /* Rotate for aesthetic */
+}
+
+/* Small Circle 1 */
+.circle-small-1 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 0; /* Below everything */
+    width: 10px;
+}
+
+/* Small Circle 2 */
+.circle-small-2 {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    z-index: 0;
+    width: 10px;
+    margin: 25px;
+}
+
+/* Arrow Down */
+.arrow-down {
+    position: absolute;
+    bottom: 10%; /* Adjust position */
+    right: 5%; /* Adjust horizontal position */
+    z-index: 1;
+    width: 40px; /* Size of arrow */
+    transform: rotate(15deg); /* Rotate for aesthetic */
+}
+
+/* Big Circle (Now Top Right) */
+.circle-big {
+    position: absolute;
+    top: 5%; /* Move to top */
+    right: 5%; /* Move to right */
+    z-index: 0; /* Behind everything */
+    width: 40px;
+    opacity: 0.7; /* Optional for faint look */
+}
+
+.small-container {
     background-color: #fff;
     width: 90vw;
-    /* height: 90vh; */
-
     border-radius: 20px;
     margin-bottom: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .col3{
+    margin-left: 50px;
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -142,12 +203,10 @@ header nav a:nth-child(2){
 .col3 span a{
     width: 500px;
     height: 100px;
-    border: 1px solid var(--main-color);
     border-radius: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    /* padding: 10px; */
-    box-shadow: 1px 0.5px #000;
+    box-shadow: 0 0 2px #000;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -158,7 +217,7 @@ header nav a:nth-child(2){
 }
 .col3 span a:hover{
     border: none;
-    background-color: #008000;
+    background-color: var(--recent-color);
     color: #fff;
     cursor: pointer;
 }
@@ -181,6 +240,7 @@ header nav a:nth-child(2){
     background-color: var(--main-color);
     color: #fff;
     padding: 20px;
+    height: 95vh;
 }
 
 .col1 .col-div{
@@ -188,13 +248,12 @@ header nav a:nth-child(2){
     align-items: center;
     justify-content: center;
     width: 350px;
-    /* height: 40px; */
     padding:10px;
-    background-color: rgb(74, 12, 124,0.5);
+    background-color: #4a0c7c80;
     border-radius: 20px;
 }
 .referral-div .row{
-    /* width: 75vw; */
+    height: 60vh;
     justify-content: space-around;
 }
 
@@ -203,11 +262,9 @@ header nav a:nth-child(2){
     align-items: center;
 }
 .leaderboard{
-    /* width: 50vw; */
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    /* height: 70vh; */
 }
 .board-div{
     display: flex;
@@ -228,45 +285,149 @@ header nav a:nth-child(2){
 .board-div .board-span-div{
     background-color: var(--main-color);
     width: 300px;
-    /* height: 200px; */
-    margin: 10px;
+    margin: 5px;
     padding: 20px;
     border-radius: 10px;
-
 }
 
-.row-div{
-    width: 230px;
-    height: 250px;
-    background-color: rgb(74, 12, 124,0.5);
-    border-radius: 10px;
+/* Section Styling */
+.referral-section {
+    background-color: #67358E; /* Purple background */
+    color: #FFFFFF; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Title Styling */
+.referral-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Cards Container */
+.referral-cards {
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 30px;
+    gap: 30px; /* Space between cards */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+   text-align: start;
 }
+
+/* Individual Card Styling */
+.card {
+    background-color: #5B2F7E; /* Slightly lighter purple */
+    border-radius: 12px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: start;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Default to column layout */
+    align-items: center;
+    gap: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Icon Styling */
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+/* Text Styling */
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #EDEDED; /* Softer white for readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .referral-section {
+        background-color: var(--bg-color); 
+        color: #000;
+    }
+    .referral-title {
+        font-size: 1.5rem;
+    }
+    .card {
+        background-color: var(--bg-color); /* White background */
+        box-shadow: none; /* Remove box-shadow */
+        box-shadow: none; /* Remove box-shadow */
+        flex-direction: row; /* Row layout for mobile */
+        align-items: center; /* Align items to the center */
+        text-align: left; /* Align text to the left */
+        gap: 40px;
+        width: 380px;
+        padding: 10px;
+
+    }
+
+    .icon img {
+        filter: hue-rotate(200deg);
+    }
+    
+    
+    .card p {
+      
+        color: #000; /* Softer white for readability */
+    }
+}
+
+
 .row.row2{
     justify-content: space-around;
+    height: 85vh;
 }
-.row2 .col2 img{
-    width: 200px;
+.row2 .col2{
+    position: relative;
+    overflow: visible; 
+    padding: 20px;
 }
+.row2 .col2 .wallet2{
+    width: 250px;
+     height: 530px; 
+     position: relative;
+}
+.row2 .col1 h1{
+    margin-top: 150px;
+}
+
 .small-div{
     width: 45vw;
-    height: 100px;
-    padding: 30px;
+    height: 180px;
+    padding: 15px;
+    margin-top: 10px;
     background-color: #fff;
     display: flex;
     align-items: start;
     flex-direction: column;
     border-radius: 10px;
+    font-weight: bold;
+    overflow: visible; 
+    position: relative;
 }
+.small-div div{
+    margin: 10px;
+}
+
 .btn{
+    margin-top: 13px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 90px;
+   padding: 15px 20px;
     border: none;
     border-radius: 10px;
     background-color: var(--main-color);
@@ -297,16 +458,18 @@ footer{
 }
 .footer-div .logo-div{
     width: 40vw;
-    font-size: 15px;
+    font-size: 14px;
+    
 }
 .socials{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 25vw;
+    font-size: 12px;
 }
 .icon-div{
-    background-color: #008000;
+    background-color: var(--recent-color);
     width: 30px;
     height: 30px;
     border-radius: 70%;
@@ -321,8 +484,9 @@ footer{
 }
 
 .line{
-    width: 80%;
+    width: 75%;
     height: 3px;
+    margin-top: 30px;
     margin-bottom: 30px;
     background-color: #fff;
 }
@@ -351,7 +515,6 @@ footer{
         width: 90%;
     }
     .col3{
-        /* width: 80vw; */
         justify-content: center;
     }
     .col3 span a{
@@ -364,15 +527,11 @@ footer{
         background: none;
         color: #000;
     }
-    .row-div{
-        margin-top: 10px;
-        background-color: var(--main-color);
-    }
-    .row2 .col1{
-        padding: 20px;
-    }
+   .row.row2{
+    overflow: visible;
+   }
     .row2 .col1 h1{
-        font-size: 30px;
+        font-size: 22px;
         text-align: center;
     }
     .row2 .col1 small{
@@ -380,12 +539,11 @@ footer{
     }
     .row2 .col1 .btn{
         margin-top: 10px;
-        background-color: #008000;
-        height: 100px;
+        background-color: var(--recent-color);
+        padding: 18px 30px;
     }
     .small-div{
         width: 80vw;
-        /* height: 400px; */
         background: none;
     }
     .referral-div{
@@ -393,9 +551,10 @@ footer{
     }
     .referral-div h1{
         color: #000;
+        font-size: 18px;
     }
     .col1 .col-div{
-        width: 600px;
+        width: 100px;
         background-color: var(--main-color);
     }
     .row4 .col1 h1{
@@ -403,6 +562,31 @@ footer{
         color: #000;
         text-align: center;
 
+    }
+    .row2 .col2 .wallet2{
+        width: 150px; /* Allow flexibility */
+        height: 300px;
+        transform: rotate(15deg);
+        display: inline-block;
+        position: relative; /* Make the image position adjustable */
+        top: 10px;          /* Move the image down if submerged */
+        left: 10px; 
+    }
+    .small-div {
+        width: 100%; /* Expand to fit */
+        padding: 20px;
+        margin-top: 10px;
+        }
+
+    
+}
+@media (max-width: 768px) {
+    .arrow-up,
+    .circle-small-1,
+    .circle-small-2,
+    .arrow-down,
+    .circle-big {
+        display: none;
     }
 }
 @media screen and (max-width:425px) {
@@ -413,7 +597,7 @@ footer{
         display: none;
     }
     .col1 .btn-div a:first-child{
-        background-color: #008000;
+        background-color: var(--recent-color);
     }
 }
 @media screen and (max-width: 375px){
@@ -442,12 +626,22 @@ footer{
         width: 250px;
     }
 }
-
-.img-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media screen and (max-width: 768px) {
+    .img-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    footer{
+        margin-top: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
+   
+    
 
 
 
@@ -497,7 +691,7 @@ form{
     height: 55px;
     border-radius: 10px;
     color: #fff;
-    background-color: #008000;
+    background-color: var(--recent-color);
     cursor: pointer;
 }
 .menu-icon{
@@ -507,6 +701,7 @@ form{
 .img-div img{
     width: 30px;
     height: 30px;
+    margin-bottom: 40px;
 }
 .container{
     transition: 1.5s;
@@ -542,8 +737,11 @@ form{
     .menu-icon img{
         width: 40px;
     }
-    .row3 .col1{
+    .row3 .col1 img{
         display: none;
+    }
+    .row3 .col1 h1{
+        font-size: 20px;
     }
     
 }
